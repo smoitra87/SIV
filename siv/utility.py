@@ -22,8 +22,14 @@ def get_logdir() :
 	logdir = os.path.join(basedir,'logs')	
 	return logdir
 
+def get_datadir() : 
+	""" Get the directory of the data/ folder"""
+	datadir = os.path.join(basedir,'data')	
+	return datadir
+
 basedir = get_basedir()
 logdir = get_logdir()
+datadir = get_datadir()
 
 def make_logdir() :
 	""" Creates a log directory if it does not exist"""
